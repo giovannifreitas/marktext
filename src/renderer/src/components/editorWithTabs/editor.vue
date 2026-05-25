@@ -879,6 +879,15 @@ const scrollToElement = (selector: string) => {
   }
 }
 
+// Expose the scroll container for synchronized scrolling
+const getScrollContainer = () => {
+  return editor.value?.container || null
+}
+
+defineExpose({
+  getScrollContainer
+})
+
 const handleFindAction = (action: unknown) => {
   const searchMatches = editor.value.find(action)
   editorStore.SEARCH(searchMatches)

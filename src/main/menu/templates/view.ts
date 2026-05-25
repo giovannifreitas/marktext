@@ -46,6 +46,16 @@ export default function(keybindings: Keybindings): MenuItemConstructorOptions {
       }
     },
     {
+      id: 'splitViewMenuItem',
+      label: t('menu.view.splitView'),
+      accelerator: keybindings.getAccelerator('view.split-view') ?? undefined,
+      type: 'checkbox',
+      checked: false,
+      click(_item, focusedWindow) {
+        actions.toggleSplitView(focusedWindow as BrowserWindow | undefined)
+      }
+    },
+    {
       type: 'separator'
     },
     {
