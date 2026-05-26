@@ -284,6 +284,7 @@
     },
     "icons": {
       "files": "文件",
+      "recent": "最近",
       "search": "搜索",
       "toc": "目录",
       "settings": "设置"
@@ -385,6 +386,7 @@
   },
   "recent": {
     "noTabsOpen": "您没有打开的标签页。",
+    "noRecentFiles": "没有最近的文件",
     "newFile": "新建文件"
   },
   "import": {

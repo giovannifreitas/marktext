@@ -284,6 +284,7 @@
     },
     "icons": {
       "files": "Fichiers",
+      "recent": "Récents",
       "search": "Rechercher",
       "toc": "Table des matières",
       "settings": "Paramètres"
@@ -385,6 +386,7 @@
   },
   "recent": {
     "noTabsOpen": "Vous n'avez aucun onglet ouvert.",
+    "noRecentFiles": "Aucun fichier récent",
     "newFile": "Nouveau fichier"
   },
   "import": {

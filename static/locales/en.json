@@ -285,6 +285,7 @@
     },
     "icons": {
       "files": "Files",
+      "recent": "Recent",
       "search": "Search",
       "toc": "Table of Contents",
       "settings": "Settings"
@@ -386,6 +387,7 @@
   },
   "recent": {
     "noTabsOpen": "You have no tabs open.",
+    "noRecentFiles": "No recent files",
     "newFile": "New File"
   },
   "import": {

@@ -68,6 +68,7 @@ export interface IpcInvokeChannels {
     ret: { defaultKeybindings: Map<string, string>; userKeybindings: Map<string, string> }
   }
   'mt::keybinding-save-user-keybindings': { args: [bindings: unknown]; ret: boolean }
+  'mt::menu::get-recently-used-documents': { args: []; ret: string[] }
   'mt::paths::is-image': { args: [path: string]; ret: boolean }
   'mt::rg::start': { args: [req: unknown]; ret: { searchId: string } }
   'mt::shell::open-external': { args: [url: string]; ret: void }

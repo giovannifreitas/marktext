@@ -284,6 +284,7 @@
     },
     "icons": {
       "files": "檔案",
+      "recent": "最近",
       "search": "搜尋",
       "toc": "目錄",
       "settings": "設定"
@@ -385,6 +386,7 @@
   },
   "recent": {
     "noTabsOpen": "您沒有開啟的標籤頁。",
+    "noRecentFiles": "沒有最近的檔案",
     "newFile": "新建檔案"
   },
   "import": {

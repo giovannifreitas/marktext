@@ -283,6 +283,7 @@
     },
     "icons": {
       "files": "Archivos",
+      "recent": "Recientes",
       "search": "Buscar",
       "toc": "Tabla de Contenidos",
       "settings": "Configuración"
@@ -384,6 +385,7 @@
   },
   "recent": {
     "noTabsOpen": "No tienes pestañas abiertas.",
+    "noRecentFiles": "Sin archivos recientes",
     "newFile": "Nuevo Archivo"
   },
   "import": {

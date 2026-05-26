@@ -284,6 +284,7 @@
     },
     "icons": {
       "files": "Arquivos",
+      "recent": "Recentes",
       "search": "Pesquisar",
       "toc": "Índice",
       "settings": "Configurações"
@@ -385,6 +386,7 @@
   },
   "recent": {
     "noTabsOpen": "Você não tem abas abertas.",
+    "noRecentFiles": "Nenhum arquivo recente",
     "newFile": "Novo Arquivo"
   },
   "import": {

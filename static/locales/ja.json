@@ -284,6 +284,7 @@
     },
     "icons": {
       "files": "ファイル",
+      "recent": "最近",
       "search": "検索",
       "toc": "目次",
       "settings": "設定"
@@ -385,6 +386,7 @@
   },
   "recent": {
     "noTabsOpen": "開いているタブがありません。",
+    "noRecentFiles": "最近のファイルなし",
     "newFile": "新しいファイル"
   },
   "import": {

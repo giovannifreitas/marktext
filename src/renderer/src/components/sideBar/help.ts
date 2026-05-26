@@ -2,6 +2,7 @@ import {
   Folder as FilesIcon,
   Search as SearchIcon,
   Memo as TocIcon,
+  Clock as RecentIcon,
   Setting as SettingIcon
 } from '@element-plus/icons-vue'
 import { t } from '@/i18n'
@@ -17,6 +18,11 @@ export const sideBarIcons: SideBarIconEntry[] = [
     id: 'files',
     name: () => t('sideBar.icons.files'),
     icon: FilesIcon
+  },
+  {
+    id: 'recent',
+    name: () => t('sideBar.icons.recent'),
+    icon: RecentIcon
   },
   {
     id: 'search',
