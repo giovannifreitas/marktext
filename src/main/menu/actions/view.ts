@@ -6,6 +6,7 @@ type Win = BrowserWindow | null | undefined
 
 const typewriterModeMenuItemId = 'typewriterModeMenuItem'
 const focusModeMenuItemId = 'focusModeMenuItem'
+const splitViewMenuItemId = 'splitViewMenuItem'
 
 const toggleTypeMode = (win: Win, type: string): void => {
   if (win && win.webContents) {
@@ -71,6 +72,10 @@ export const toggleTypewriterMode = (win: Win): void => {
   toggleTypeMode(win, 'typewriter')
 }
 
+export const toggleSplitView = (win: Win): void => {
+  toggleTypeMode(win, 'splitView')
+}
+
 export const reloadImageCache = (win: Win): void => {
   if (win && win.webContents) {
     win.webContents.send('mt::invalidate-image-cache')
@@ -88,6 +93,7 @@ export const loadViewCommands = (commandManager: CommandManager): void => {
   commandManager.add(COMMANDS.VIEW_TOGGLE_TABBAR, toggleTabBar)
   commandManager.add(COMMANDS.VIEW_TOGGLE_TOC, showTableOfContents)
   commandManager.add(COMMANDS.VIEW_TYPEWRITER_MODE, toggleTypewriterMode)
+  commandManager.add(COMMANDS.VIEW_SPLIT_VIEW, toggleSplitView)
 
   commandManager.add(COMMANDS.VIEW_DEV_RELOAD, debugReloadWindow)
   commandManager.add(COMMANDS.VIEW_TOGGLE_DEV_TOOLS, debugToggleDevTools)
@@ -129,12 +135,17 @@ export const viewLayoutChanged = (
         changeMenuByName('sourceCodeModeMenuItem', !!value)
         disableMenuByName(focusModeMenuItemId, !value)
         disableMenuByName(typewriterModeMenuItemId, !value)
+        disableMenuByName(splitViewMenuItemId, !!value)
         break
       case 'typewriter':
         changeMenuByName(typewriterModeMenuItemId, value)
         break
       case 'focus':
         changeMenuByName(focusModeMenuItemId, value)
+        break
+      case 'splitView':
+        changeMenuByName(splitViewMenuItemId, !!value)
+        disableMenuByName('sourceCodeModeMenuItem', !!value)
         break
     }
   }

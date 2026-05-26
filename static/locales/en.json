@@ -135,6 +135,8 @@
       "typewriterMode": "Typewriter Mode",
       "focus": "Focus Mode",
       "focusMode": "Focus Mode",
+      "splitView": "Split View",
+      "splitViewMode": "Split View",
       "showTabBar": "Show Tab Bar",
       "toc": "Table of Contents",
       "toggleTableOfContents": "Toggle Table of Contents",

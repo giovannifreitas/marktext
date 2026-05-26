@@ -112,6 +112,7 @@ export interface PreferencesState {
   typewriter: boolean
   focus: boolean
   sourceCode: boolean
+  splitView: boolean
 
   // ----- User config -----
   imageFolderPath: string
@@ -226,6 +227,7 @@ export const usePreferencesStore = defineStore('preferences', {
     typewriter: false, // typewriter mode
     focus: false, // focus mode
     sourceCode: false, // source code mode
+    splitView: false, // split view mode
 
     // user configration
     imageFolderPath: '',
